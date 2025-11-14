@@ -1,0 +1,64 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+</head>
+<body>
+    <h1>Book Your Stay</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Guest Information</legend>
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="full_name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Booking Details</legend>
+            <div>
+                <label for="check_in">Check-in Date:</label>
+                <input type="date" id="check_in" name="check_in_date" required>
+            </div>
+            <div>
+                <label for="check_out">Check-out Date:</label>
+                <input type="date" id="check_out" name="check_out_date" required>
+            </div>
+            <div>
+                <label for="room_type">Room Type:</label>
+                <select id="room_type" name="room_type">
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+            <div>
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="num_guests" min="1" value="1" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Special Requests</legend>
+            <div>
+                <label for="requests">Any special requests?</label>
+                <textarea id="requests" name="special_requests" rows="4" cols="50"></textarea>
+            </div>
+        </fieldset>
+
+        <div>
+            <button type="submit">Confirm Booking</button>
+        </div>
+    </form>
+</body>
+</html>
