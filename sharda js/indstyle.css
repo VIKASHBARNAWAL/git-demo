@@ -1,0 +1,18 @@
+*{
+    background-color:turquoise;
+}
+.main {
+    color:red;
+    display:flex;
+}
+.b{
+    color:green;
+    border:2px solid yellow;
+    display:flex;
+    margin :20px;
+    background-color:pink;
+}
+.a{
+    font-size:40px;
+    margin-right:900px;
+}
